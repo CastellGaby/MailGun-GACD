@@ -22,7 +22,7 @@ namespace Mailgun_GACD
             request.AddParameter("from", "Mailgun Sandbox <sandbox8e6ac167372b467991b84322a935c73e.mailgun.org>");
             request.AddParameter("to", ToReceptor+" "+"<"+EmailReceptor+">");
             request.AddParameter("subject", "Confirmación Cuenta de StackOverflow");
-            request.AddParameter("text", "Bienvenido@, tu cuenta ha sido activada");
+            request.AddParameter("text", "Bienvenido@, tu cuenta ha sido activada.");
             request.Method = Method.POST;
             return (RestResponse)client.Execute(request);
         }
